@@ -7,4 +7,6 @@
 5. add the content in the logger file
 6. add the content in the exception.py file
 7. updated the app.py file
-8. 
+8. reading the data from mysql database and updated the utils.py file
+9. updated the data_ingestion.py file
+10. 
