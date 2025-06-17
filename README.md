@@ -4,4 +4,5 @@
 2. add the requirements.txt file to install packages (python install -r requirements.txt)
 3. add the setup.py file
 4. add the template.py file
-5. 
+5. add the content in the logger file
+6. 
