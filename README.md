@@ -5,4 +5,6 @@
 3. add the setup.py file
 4. add the template.py file
 5. add the content in the logger file
-6. 
+6. add the content in the exception.py file
+7. updated the app.py file
+8. 
