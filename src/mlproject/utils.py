@@ -27,7 +27,7 @@ def read_sql_data():
         print("Database connection successful!")
 
         df = pd.read_sql_query("SELECT * FROM students", mydb)
-        print(df.head(5))
+        # print(df.head(5))
         return df
 
     except CustomException as e:
