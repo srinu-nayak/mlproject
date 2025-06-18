@@ -9,4 +9,6 @@
 7. updated the app.py file
 8. reading the data from mysql database and updated the utils.py file
 9. updated the data_ingestion.py file
-10. 
+10. configured dvc for dataset tracking
+11. updated the data_ingestion.py file
+12. 
