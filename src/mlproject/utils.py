@@ -47,11 +47,16 @@ def save_object(file_path, obj):
     except Exception as e:
         raise CustomException(e, sys)
 
-def evaluate_models(X_train, y_train, X_test, y_test, model):
+def evaluate_models(X_train, y_train, X_test, y_test, models:dict):
+    global r2_score
     try:
-        model.fit(X_train, y_train)
-        y_pred = model.predict(X_test)
-        print(r2_score(y_test, y_pred))
+        results = {}
+        for model_name, model in models.items():
+            model.fit(X_train, y_train)
+            y_pred = model.predict(X_test)
+            r2 = r2_score(y_test, y_pred)
+            results[model_name] = r2
+        return results
 
     except Exception as e:
         raise CustomException(e, sys)
