@@ -10,5 +10,6 @@
 8. reading the data from mysql database and updated the utils.py file
 9. updated the data_ingestion.py file
 10. configured dvc for dataset tracking
-11. updated the data_ingestion.py file
-12. 
+11. updated the data_transformation.py file
+12. updated the model_trainer.py file
+13. 

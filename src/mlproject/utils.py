@@ -6,6 +6,7 @@ import mysql.connector
 from dotenv import load_dotenv
 import os
 import pandas as pd
+from sklearn.metrics import r2_score
 
 load_dotenv()
 
@@ -42,6 +43,15 @@ def save_object(file_path, obj):
         with open(file_path, 'wb') as f:
             pickle.dump(obj, f)
 
+
+    except Exception as e:
+        raise CustomException(e, sys)
+
+def evaluate_models(X_train, y_train, X_test, y_test, model):
+    try:
+        model.fit(X_train, y_train)
+        y_pred = model.predict(X_test)
+        print(r2_score(y_test, y_pred))
 
     except Exception as e:
         raise CustomException(e, sys)
